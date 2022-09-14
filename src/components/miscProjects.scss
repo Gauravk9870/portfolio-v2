@@ -1,0 +1,111 @@
+@mixin mobile {
+    @media screen and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width:1200px){
+        @content;
+    }
+}
+
+.misc {
+    .header{
+        span h1 {
+            font-size: 50px;
+            font-weight: 700;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    
+        span p {
+            font-size: 20px;
+            // font-weight: 400;
+            text-align: left;
+            text-transform: capitalize;
+        }
+    }
+
+
+    .content{
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        
+        
+        .miscproject{
+            // border: 1px solid red;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &:hover{
+                .info{
+                    width: 100%;
+                    height: 100%;
+                    background-color: #555;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h3{
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+
+                    button{
+                        padding: 8px 16px;
+                        border: none;
+                        background-color: transparent;
+                        color: #fff;
+                        font-size: 15px;
+                        // font-weight: 600;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        border-radius: 20px;
+                        transition: all 0.3s ease-in-out;
+                        background-color: #d3a87755;
+                        &:hover{
+                            background-color: #d3a877;
+                        }
+                    }
+                }
+            }
+
+            .img{
+                width: 100%;
+                height: 100%;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .info{
+                display: none;
+            }
+
+            
+
+           
+        }
+    }
+}

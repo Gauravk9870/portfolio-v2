@@ -33,7 +33,7 @@ const Contact = () => {
   }, [animation, inView]);
 
   return (
-    <div className='contact'>
+    <div className='contact' id='contact'>
       <motion.div className="wrapper"
         ref={ref}
         variants={projectAnimation}

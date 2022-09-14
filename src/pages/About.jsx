@@ -30,7 +30,7 @@ const About = () => {
   }, [animation, inView]);
 
   return (
-    <motion.div className='about'
+    <motion.div className='about' id='about'
       ref={ref}
       variants={projectAnimation}
       initial="hidden"

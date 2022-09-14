@@ -19,11 +19,11 @@ const Navbar = () => {
       <span className='logo'>Gaurav<span style={{color:"#d3a877", fontSize:"30px"}}>.</span></span>
       <div className="menu">
         <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>projects</li>
-          <li>contact</li>
-        </ul>
+          <li><a href='/'>home</a></li>
+          <li><a href='#about'>about</a></li>
+          <li><a href='#projects'>projects</a></li>
+          <li><a href='#contact'>contact</a></li>
+         </ul>
       </div>
       
       <motion.button className='hire'

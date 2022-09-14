@@ -2,12 +2,13 @@ import React from 'react'
 import "./projects.scss"
 import {ProjectData} from '../utilities/ProjectData'
 import Project from '../components/Project'
+import MiscProjects from '../components/MiscProjects'
 
 
 const Projects = () => {
 
   return (
-    <div className='projects'>
+    <div className='projects' id='projects'>
       <div className="wrapper">
         <div className="header">
           <span><h1>Projects<span className='dot'>.</span></h1></span>
@@ -31,6 +32,8 @@ const Projects = () => {
             })
           }
         </div>
+
+        <MiscProjects/>
       </div>
     </div>
   )
