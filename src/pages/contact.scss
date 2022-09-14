@@ -1,0 +1,87 @@
+.contact {
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #222;
+    // border: 1px solid red;
+
+    .wrapper {
+        width: 80%;
+        height: 80%;
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+
+        .content {
+            // border: 1px solid red;
+            width: 80%;
+            height: 80%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            
+
+            .heading {
+                span {
+                    font-size: 50px;
+                    font-weight: 700;
+                    text-align: left;
+                    text-transform: uppercase;
+
+                }
+            }
+
+            .sub-heading {
+                margin-bottom: 30px;
+                p {
+                    font-size: 20px;
+                    // font-weight: 400;
+                    text-align: left;
+                    text-transform: capitalize;
+                }
+            }
+
+            .btn {
+                // border: 1px solid red;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+
+                .hello {
+                    padding: 10px 18px;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    border-radius: 20px;
+                    background-color: #d3a877;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #222;
+                        color: #fff;
+                    }
+                }
+
+                .social{
+                    font-size: 20px;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: #d3a877;
+                    }
+
+                    
+                }
+            }
+        }
+
+
+
+    }
+}

@@ -1,0 +1,39 @@
+@mixin mobile {
+    @media screen and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width:1200px){
+        @content;
+    }
+}
+
+.skills{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    .wrapper{
+        width: 80%;
+        height: 100%;
+        background-color: #8c756b;
+        // background-color: #d3a877;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        img{
+            @include tablet(){
+                width: 50px;
+            }
+        }
+    }
+}

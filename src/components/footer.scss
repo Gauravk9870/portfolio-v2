@@ -1,0 +1,128 @@
+@mixin mobile {
+    @media screen and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width:1200px){
+        @content;
+    }
+}
+
+.footer{
+    background-color: #111;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+   
+    
+    .wrapper{
+        // border: 1px solid red;
+        height: 70%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        
+        .up{
+            
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            // border: 1px solid red;
+            height: 50%;
+            width: 100%;
+
+            span{
+                font-size: 15px;
+                cursor: pointer;
+                margin-bottom: 5px;
+                &:hover{
+                    color: #d3a877;
+                }
+                @include tablet(){
+                    font-size: 12px;
+                }
+            }
+
+            .logo{
+                font-size: 40px;
+                font-weight: 600;
+                color: #fff;
+                @include tablet(){
+                    font-size: 30px;
+                }
+            }
+    
+            .projects-list{
+                display: flex;
+                flex-direction: column;
+                
+            }
+    
+            .menu-links{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+
+        .down{
+            border-top: 1px solid #555;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            gap: 50px;
+
+            .social-links{
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+
+                &>*{
+                    font-size: 20px;
+                    cursor: pointer;
+                    color: #fff;
+                    @include tablet(){
+                        font-size: 16px;
+                    }
+
+                    &:hover{
+                        color: #d3a877;
+                    }
+                }
+            }
+
+            .copy{
+                font-size: 15px;
+                color: #999;
+                @include tablet(){
+                    font-size: 12px;
+                }
+            }
+        }
+
+
+        
+
+        
+
+    }
+}
