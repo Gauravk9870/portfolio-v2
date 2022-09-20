@@ -45,7 +45,7 @@ const Contact = () => {
             <span>Get in <br />TOUCH<span className='dot'>.</span></span>
           </div>
           <div className="sub-heading">
-            <p>Got a question or proposal or just want to day hello? <br />go ahead</p>
+            <p>Got a question or proposal or just want to say hello? <br />go ahead</p>
           </div>
           <div className="btn">
             <button className='hello'>Say Hello!</button>
