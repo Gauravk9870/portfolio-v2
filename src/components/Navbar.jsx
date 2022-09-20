@@ -1,36 +1,42 @@
-import React,{ useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./navbar.scss";
-import {BiMenu} from "react-icons/bi";
+import { BiMenu, BiMenuAltRight } from "react-icons/bi";
 import { motion } from 'framer-motion';
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
 
-  const showMenuHandler = () => {
-    
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
-  }
 
-  
+
 
   return (
     <div className='navbar'>
-      <span className='tablet-menu' onClick={showMenuHandler}><BiMenu/></span>
-      
-      <span className='logo'>Gaurav<span style={{color:"#d3a877", fontSize:"30px"}}>.</span></span>
-      <div className="menu">
-        <ul>
-          <li><a href='/'>home</a></li>
-          <li><a href='#about'>about</a></li>
-          <li><a href='#projects'>projects</a></li>
-          <li><a href='#contact'>contact</a></li>
-         </ul>
+      <span className='logo'>Gaurav<span className='dot'>.</span></span>
+      <div className={click ? "mobile-nav-menu" : "menu"}>
+        <ul >
+          <li><a href='/'>home<span className='dot'>.</span></a></li>
+          <li><a href='#about'>about<span className='dot'>.</span></a></li>
+          <li><a href='#projects'>projects<span className='dot'>.</span></a></li>
+          <li><a href='#contact'>contact<span className='dot'>.</span></a></li>
+        </ul>
       </div>
-      
+
       <motion.button className='hire'
-        whileHover={{ backgroundColor : "#555"}}
+        whileHover={{ backgroundColor: "#555" }}
       >
         Hire Me
       </motion.button>
+
+      <div className="mobile-menu" onClick={handleClick}>
+        {!click ? (
+          <BiMenu className='mobile-menu-btn' />
+        ) : (
+          <IoMdClose className='mobile-menu-btn' />
+        )}
+      </div>
     </div>
   )
 }

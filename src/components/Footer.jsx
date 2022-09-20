@@ -13,19 +13,21 @@ const Footer = () => {
             <span className='logo'>Gaurav<span style={{ color: "#d3a877", fontSize: "50px" }}>.</span></span>
           </div>
 
-          <div className="projects-list">
-            <span>Real Estate</span>
-            <span>YouTube Clone</span>
-            <span>Zoom clone</span>
-          </div>
+          <div className="footer-projects">
+            <div className="projects-list">
+              <span>Real Estate</span>
+              <span>YouTube Clone</span>
+              <span>Zoom clone</span>
+            </div>
 
-          <div className="projects-list">
-            <span>Portfolio</span>
-            <span>Chat App</span>
-          </div>
-          <div className="projects-list">
-            <span>Google Clone</span>
-            <span>Disney Hotstar Clone</span>
+            <div className="projects-list">
+              <span>Portfolio</span>
+              <span>Chat App</span>
+            </div>
+            <div className="projects-list">
+              <span>Google Clone</span>
+              <span>Disney Hotstar</span>
+            </div>
           </div>
 
           <div className="menu-links">

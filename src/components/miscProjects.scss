@@ -1,5 +1,5 @@
 @mixin mobile {
-    @media screen and (max-width:480px){
+    @media screen and (max-width:600px){
         @content;
     }
 }
@@ -11,6 +11,12 @@
 }
 
 @mixin laptop {
+    @media screen and (max-width:992px){
+        @content;
+    }
+}
+
+@mixin large {
     @media screen and (max-width:1200px){
         @content;
     }
@@ -18,15 +24,15 @@
 
 .misc {
     .header{
-        span h1 {
-            font-size: 50px;
+        h1 {
+            font-size: 5rem;
             font-weight: 700;
             text-align: left;
             text-transform: uppercase;
         }
     
-        span p {
-            font-size: 20px;
+        p {
+            font-size: 2rem;
             // font-weight: 400;
             text-align: left;
             text-transform: capitalize;
@@ -38,7 +44,7 @@
         
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+        gap: 2rem;
         
         
         .miscproject{
@@ -63,22 +69,22 @@
 
                     h3{
                         color: #fff;
-                        font-size: 20px;
+                        font-size: 2rem;
                         font-weight: 700;
                         text-transform: uppercase;
                         text-align: center;
                     }
 
                     button{
-                        padding: 8px 16px;
+                        padding: .8rem 1.6rem;
                         border: none;
                         background-color: transparent;
                         color: #fff;
-                        font-size: 15px;
+                        font-size: 1.5rem;
                         // font-weight: 600;
                         text-transform: uppercase;
                         cursor: pointer;
-                        border-radius: 20px;
+                        border-radius: 2rem;
                         transition: all 0.3s ease-in-out;
                         background-color: #d3a87755;
                         &:hover{
@@ -101,11 +107,7 @@
 
             .info{
                 display: none;
-            }
-
-            
-
-           
+            }           
         }
     }
 }

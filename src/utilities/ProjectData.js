@@ -22,7 +22,9 @@ export const ProjectData = [
         technology: [<FaReact/>, <SiFirebase/>, <DiSass/>],
         image: chat,
         category: "Featured",
-        position:"right"
+        position:"right",
+        sourcecode: "",
+        preview: "https://i61hwt.csb.app/login"
     },
     {
         id: 2,
@@ -31,7 +33,9 @@ export const ProjectData = [
         technology: [<FaHtml5/>, <SiJavascript/>,<DiSass/> ],
         image: realEstate,
         category: "Featured",
-        position:"left"
+        position:"left",
+        sourcecode: "",
+        preview: ""
     },
     {
         id: 3,
@@ -40,7 +44,9 @@ export const ProjectData = [
         technology: [<FaReact/>, <TbApi/>, <DiSass/>],
         image: exercise,
         category: "Featured",
-        position:"right"
+        position:"right",
+        sourcecode: "",
+        preview: "https://wk534u.csb.app/"
     },
    
 
@@ -54,6 +60,8 @@ export const MiscProjectData = [
         technology: [<FaHtml5/>, <SiJavascript/>,<DiSass/> ],
         image: jwellery,
         category: "Miscellaneous",
+        sourcecode: "",
+        preview: ""
     },
     {
         id:2,
@@ -62,6 +70,8 @@ export const MiscProjectData = [
         technology: [<FaReact/>, <TbApi/>, <DiSass/>],
         image: meditation,
         category: "Miscellaneous",
+        sourcecode: "",
+        preview: ""
     },
     {
         id:3,
@@ -70,6 +80,8 @@ export const MiscProjectData = [
         technology: [<FaHtml5/>, <SiJavascript/>,<DiSass/> ],
         image: realEstate2,
         category: "Miscellaneous",
+        sourcecode: "",
+        preview: ""
     },
     {
         id:4,
@@ -78,6 +90,8 @@ export const MiscProjectData = [
         technology: [<FaHtml5/>, <SiJavascript/>,<DiSass/> ],
         image: youtube,
         category: "Miscellaneous",
+        sourcecode: "",
+        preview: ""
     },
     {
         id:5,
@@ -86,6 +100,9 @@ export const MiscProjectData = [
         technology: [<FaReact/>,<DiSass/> ],
         image: herbal,
         category: "Miscellaneous",
+        sourcecode: "",
+        preview: ""
     }
 
 ]
+

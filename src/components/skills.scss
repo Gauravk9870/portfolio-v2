@@ -1,23 +1,30 @@
 @mixin mobile {
-    @media screen and (max-width:480px){
+    @media screen and (max-width:600px) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media screen and (max-width:768px){
+    @media screen and (max-width:768px) {
         @content;
     }
 }
 
 @mixin laptop {
-    @media screen and (max-width:1200px){
+    @media screen and (max-width:992px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media screen and (max-width:1200px) {
         @content;
     }
 }
 
 .skills{
-    height: 100px;
+    z-index: 2;
+    height: 10rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -30,6 +37,9 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        @include mobile{
+            width: 100%;
+        }
         img{
             @include tablet(){
                 width: 50px;

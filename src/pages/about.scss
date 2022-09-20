@@ -1,12 +1,40 @@
+@mixin mobile {
+    @media screen and (max-width:600px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width:992px){
+        @content;
+    }
+}
+
+@mixin large {
+    @media screen and (max-width:1200px){
+        @content;
+    }
+}
+
 .about{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px;
+    padding: 0rem;
     background-color: #555;
     color: #fff;
     height: 100vh;
     // border: 1px solid red;
+    @include mobile(){
+        height: 50vh;
+        flex-direction: column;
+    }
 
     .header{
         background: #666;
@@ -16,9 +44,14 @@
         display: flex;
         // margin: 0px 50px;
         align-items: center;
+        
         justify-content: center;
         flex-direction: column;
-        // border: 1px solid red;
+        @include mobile(){
+            width: 100%;
+            align-items: center;
+                justify-content: center;
+        }
 
         .wrapper{
             width: 70%;
@@ -28,10 +61,14 @@
             flex-direction: column;
             justify-content: center;
             // border: 1px solid red;
+            @include mobile(){
+                width: 90%;
+                
+            }
         }
 
         span h1{
-            font-size: 50px;
+            font-size: 5rem;
             font-weight: 700;
             text-align: left;
             text-transform: uppercase;
@@ -39,7 +76,7 @@
         }
 
         span p{
-            font-size: 20px;
+            font-size: 2rem;
             // font-weight: 400;
             text-align: left;
             text-transform: capitalize;
@@ -55,8 +92,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include mobile(){
+            width: 100%;
+        }
         span{
             width: 80%;
+            font-size: 1.5rem;
+            text-transform: capitalize;
         }
     }
 }

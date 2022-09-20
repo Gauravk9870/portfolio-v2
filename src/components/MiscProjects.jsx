@@ -37,12 +37,8 @@ const MiscProjects = () => {
             animate={animation}
         >
             <div className="header">
-                <span>
                     <h1>miscellaneous projects<span className='dot'>.</span></h1>
-                </span>
-                <span>
                     <p>Some others worthy projects</p>
-                </span>
             </div>
             <div className="content">
                 {

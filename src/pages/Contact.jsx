@@ -49,11 +49,13 @@ const Contact = () => {
           </div>
           <div className="btn">
             <button className='hello'>Say Hello!</button>
-            <FaLinkedin className='social' />
-            <FaGithub className='social' />
-            <FiCodesandbox className='social' />
-            <FaInstagram className='social' />
-            <FaCodepen className='social' />
+            <div className="social-media">
+              <FaLinkedin className='social' />
+              <FaGithub className='social' />
+              <FiCodesandbox className='social' />
+              <FaInstagram className='social' />
+              <FaCodepen className='social' />
+            </div>
           </div>
         </div>
       </motion.div>

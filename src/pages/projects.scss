@@ -1,5 +1,4 @@
 .projects{
-    // height: 150vh;
    
     background: rgb(85,85,85);
     background: -moz-linear-gradient(180deg, rgba(85,85,85,1) 0%, rgba(68,68,68,1) 25%, rgba(51,51,51,1) 57%, rgba(34,34,34,1) 100%);
@@ -14,23 +13,23 @@
 
 
     .wrapper{
-        margin: 100px 0px;
+        margin: 10rem 0rem;
         width: 90%;
        
         // border: 1px solid red;
 
         .header{
             // border: 1px solid red;
-            margin-bottom: 100px;
+            margin-bottom: 10rem;
             span h1{
-                font-size: 50px;
+                font-size: 5rem;
                 font-weight: 700;
                 text-align: left;
                 text-transform: uppercase;
             }
     
             span p{
-                font-size: 20px;
+                font-size: 2rem;
                 // font-weight: 400;
                 text-align: left;
                 text-transform: capitalize;
@@ -70,16 +69,16 @@
 
             .project{
                 position: relative;
-                margin-bottom: 100px;
+                margin-bottom: 10rem;
                 // border: 1px solid red;
 
                 .cateogry{
-                    font-size: 15px;
+                    font-size: 1.5rem;
                     text-transform: capitalize;
                     color: #d3a877;
                 }
                 .title{
-                    font-size: 30px;
+                    font-size: 3rem;
                     font-weight: 700;
                     text-align: left;
                     text-transform: uppercase;
@@ -87,10 +86,10 @@
                 }
                 .tech{
                 
-                    margin-bottom: 20px;
+                    margin-bottom: 2rem;
                     .techIcon{
-                        margin-right: 20px;
-                        font-size: 15px;
+                        margin-right: 2rem;
+                        font-size: 1.5rem;
                         cursor: pointer;
                         
 
@@ -103,7 +102,7 @@
                 
                 .image{
                     // border: 1px solid red;
-                    margin-bottom: 50px;
+                    margin-bottom: 5rem;
                     width: 80%;
                     display: flex;
                     align-items: center;
@@ -121,18 +120,18 @@
                     color: #444;
                     width: 50%;
                     height: 50%;
-                    padding: 0px 30px;
+                    padding: 0rem 3rem;
                     bottom: 0;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-                    font-size: 15px;
+                    font-size: 1.5rem;
                     .content{
                         width: 80%;
                         // border: 1px solid red;
                         text-align: center;
-                        margin-bottom: 20px;
+                        margin-bottom: 2rem;
                     }
                     .code{
                         display: flex;
@@ -144,9 +143,9 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            padding: 10px;
+                            padding: 1rem;
                             border-radius: 50%;
-                            font-size: 20px;
+                            font-size: 2rem;
                             // margin-right: 20px;
                             border: none;
                             background-color: transparent;
@@ -161,14 +160,8 @@
                             }
                         }
                     }
-
-                    
-
-                }
-
-                
+                }    
             }
         }
     }
-
 }
