@@ -27,6 +27,9 @@ const Projects = () => {
                   description={item.description}
                   type={item.type}
                   position={item.position}
+                  github={item.github}
+                  preview={item.preview}
+                  codesandbox={item.codesandbox}
                 />
               )
             })

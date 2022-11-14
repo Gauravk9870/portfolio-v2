@@ -23,8 +23,9 @@ export const ProjectData = [
         image: chat,
         category: "Featured",
         position:"right",
-        sourcecode: "",
-        preview: "https://i61hwt.csb.app/login"
+        github: "https://github.com/Gauravk9870/chat-app",
+        preview: "https://i61hwt.csb.app/login",
+        codesandbox: "https://codesandbox.io/s/chat-app-i61hwt?file=/index.html"
     },
     {
         id: 2,
@@ -34,8 +35,9 @@ export const ProjectData = [
         image: realEstate,
         category: "Featured",
         position:"left",
-        sourcecode: "",
-        preview: ""
+        github: "https://github.com/Gauravk9870/websites/tree/main/Real%20State",
+        preview: "https://codepen.io/gauravk9870/full/MWvpYKR",
+        codesandbox: "https://codepen.io/gauravk9870/pen/MWvpYKRl"
     },
     {
         id: 3,
@@ -45,8 +47,9 @@ export const ProjectData = [
         image: exercise,
         category: "Featured",
         position:"right",
-        sourcecode: "",
-        preview: "https://wk534u.csb.app/"
+        github: "https://github.com/Gauravk9870/",
+        preview: "https://wk534u.csb.app/",
+        codesandbox: "https://codesandbox.io/s/exercise-app-wk534u"
     },
    
 
@@ -71,7 +74,7 @@ export const MiscProjectData = [
         image: meditation,
         category: "Miscellaneous",
         sourcecode: "",
-        preview: ""
+        preview: "https://ut2169.csb.app/"
     },
     {
         id:3,
@@ -81,7 +84,7 @@ export const MiscProjectData = [
         image: realEstate2,
         category: "Miscellaneous",
         sourcecode: "",
-        preview: ""
+        preview: "https://5tthh2.csb.app/"
     },
     {
         id:4,
@@ -91,7 +94,7 @@ export const MiscProjectData = [
         image: youtube,
         category: "Miscellaneous",
         sourcecode: "",
-        preview: ""
+        preview: "https://bicryh.csb.app/"
     },
     {
         id:5,

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import './style.scss';
 import { motion } from 'framer-motion';
+import Header from './components/Header';
 
 const App = () => {
   return (

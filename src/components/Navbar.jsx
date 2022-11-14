@@ -8,12 +8,22 @@ const Navbar = () => {
 
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
 
 
 
 
   return (
-    <div className='navbar'>
+    <div className={colorChange ? 'navbar colorChange' : 'navbar'}>
       <span className='logo'>Gaurav<span className='dot'>.</span></span>
       <div className={click ? "mobile-nav-menu" : "menu"}>
         <ul >
@@ -36,6 +46,11 @@ const Navbar = () => {
         ) : (
           <IoMdClose className='mobile-menu-btn' />
         )}
+      </div>
+      <div className="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   )

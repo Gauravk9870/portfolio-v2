@@ -27,6 +27,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
     
     padding: 0 5rem;
     height: 7rem;
@@ -35,6 +39,7 @@
 
     border: .1rem solid #cbcbcb;
     text-transform: uppercase;
+    background: #fff;
    
 
 
@@ -149,6 +154,10 @@
             display: flex;
         }
         
+    }
+
+    .toggle{
+        display: none;
     }
 
 }
