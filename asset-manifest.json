@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-v2/static/css/main.f98d6698.css",
-    "main.js": "/portfolio-v2/static/js/main.bc7d20ea.js",
+    "main.css": "/portfolio-v2/static/css/main.c3152bb9.css",
+    "main.js": "/portfolio-v2/static/js/main.ff97cc96.js",
     "static/media/youtube.png": "/portfolio-v2/static/media/youtube.c5a93a53a7c8191ee34f.png",
     "static/media/real-estate.png": "/portfolio-v2/static/media/real-estate.13a90d777ab2b34633e9.png",
     "static/media/real-estate-2.png": "/portfolio-v2/static/media/real-estate-2.08da703cfda350ae9d5f.png",
@@ -19,12 +19,13 @@
     "static/media/2.svg": "/portfolio-v2/static/media/2.cfef30e2c3ea07a5245d65e4c8287c25.svg",
     "static/media/6.svg": "/portfolio-v2/static/media/6.e8802dd2cb74403aec57d0a51a6bd576.svg",
     "static/media/7.svg": "/portfolio-v2/static/media/7.9d350f02e80f227763a1c72b2d092a72.svg",
+    "static/media/up-arrow-circle.svg": "/portfolio-v2/static/media/up-arrow-circle.c378eca066d4aa28abef60f4536d348d.svg",
     "index.html": "/portfolio-v2/index.html",
-    "main.f98d6698.css.map": "/portfolio-v2/static/css/main.f98d6698.css.map",
-    "main.bc7d20ea.js.map": "/portfolio-v2/static/js/main.bc7d20ea.js.map"
+    "main.c3152bb9.css.map": "/portfolio-v2/static/css/main.c3152bb9.css.map",
+    "main.ff97cc96.js.map": "/portfolio-v2/static/js/main.ff97cc96.js.map"
   },
   "entrypoints": [
-    "static/css/main.f98d6698.css",
-    "static/js/main.bc7d20ea.js"
+    "static/css/main.c3152bb9.css",
+    "static/js/main.ff97cc96.js"
   ]
 }
